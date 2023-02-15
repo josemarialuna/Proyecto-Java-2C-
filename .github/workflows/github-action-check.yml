@@ -1,14 +1,14 @@
-name: Revisión de cógido
+name: Revisión de código
 run-name: Revisión de código 🚀
 on: [push]
 jobs:
   checkstyle:
-    name: 🔎 A continuación se va a revisar el código que acaba de subir a ${{ github.repository }}. Este proceso puede tardar un par de minutos...
+    name: Checking
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: dbelyaev/action-checkstyle@v0.5.1
         with:
           github_token: ${{ secrets.github_token }}
-          #reporter: github-pr-review
+          reporter: github-check
           level: warning
