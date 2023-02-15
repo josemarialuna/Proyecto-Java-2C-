@@ -3,7 +3,7 @@ run-name: Revisión de código 🚀
 on: [push]
 jobs:
   checkstyle:
-    name: Checking
+    name: 🔎 Para ver los resultados revise su commit desde la página principal del respositorio ${{ github.repository }} en Github.
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -12,5 +12,3 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           level: warning
-          checkstyle_version: 10.7.0
-      - run: echo "🔎 Para ver los resultados vaya a revisar su commit desde la página principal del respositorio ${{ github.repository }} en Github."
