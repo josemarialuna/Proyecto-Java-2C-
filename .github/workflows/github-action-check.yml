@@ -12,3 +12,4 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           level: warning
+          check_style_config: sun_checks.xml
