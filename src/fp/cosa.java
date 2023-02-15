@@ -5,5 +5,4 @@ public class cosa {
     private String otroAtributo;
 
 
-    
 }

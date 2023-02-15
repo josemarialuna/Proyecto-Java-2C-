@@ -51,7 +51,6 @@ public class Estacion implements Comparable<Estacion> {
         this.disponibles = disponibles;
     }
 
-    
     public String getNombre() {
         return nombre;
     }
