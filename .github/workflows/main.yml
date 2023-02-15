@@ -1,2 +1,0 @@
-- name: Checkstyle for Java
-  uses: dbelyaev/action-checkstyle@v0.6.1
