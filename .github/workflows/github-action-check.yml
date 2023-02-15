@@ -12,4 +12,5 @@ jobs:
           github_token: ${{ secrets.github_token }}
           reporter: github-check
           level: warning
-          check_style_config: sun_checks.xml
+          checkstyle_version: 10.7
+      - run: echo "🔎 Para ver los resultados vaya a revisar su commit desde la página principal del respositorio ${{ github.repository }} en Github."
