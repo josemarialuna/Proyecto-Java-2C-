@@ -1,5 +1,5 @@
-# Proyecto del Segundo Cuatrimestre Fundamentos de Programación (Curso  \<XX\>/\<YY\>)
-Autor/a: \<nombre del autor\>   uvus:\<uvus del autor\>
+# Proyecto del Segundo Cuatrimestre Fundamentos de Programación (Curso  XX/YY)
+Autor/a: nombre del autor   uvus: uvus del autor
 
 Aquí debes añadir la descripción del dataset y un enunciado del dominio del proyecto.
 
@@ -7,22 +7,22 @@ Aquí debes añadir la descripción del dataset y un enunciado del dominio del p
 ## Estructura de las carpetas del proyecto
 
 * **/src**: Contiene los diferentes archivos que forman parte del proyecto. Debe estar estructurado en los siguentes paquetes
-  * **fp.\<dominio\>**: Paquete que contiene los tipos del proyecto.
-  * **fp.\<dominio\>.test**: Paquete que contiene las clases de test del proyecto.
+  * **fp.dominio**: Paquete que contiene los tipos del proyecto.
+  * **fp.dominio.test**: Paquete que contiene las clases de test del proyecto.
   * **fp.common**: Paquete que contiene los tipos auxiliares del proyecto
   * **fp.utiles**:  Paquete que contiene las clases de utilidad. 
 * **/data**: Contiene el dataset o datasets del proyecto
-    * **\<dataset1.csv\>**: Añade una descripción genérica del dataset.
-    * **\<dataset2.csv\>**: Añade una descripción del resto de datasets que puedas tener.
+    * **dataset1.csv**: Añade una descripción genérica del dataset.
+    * **dataset2.csv**: Añade una descripción del resto de datasets que puedas tener.
     
 ## Estructura del *dataset*
 
 Aquí debes describir la estructura del dataset explicando qué representan los datos que contiene y la descripción de cada una de las columnas. Incluye también la URL del dataset original.
 
-El dataset está compuesto por \<N\> columnas, con la siguiente descripción:
+El dataset está compuesto por N columnas, con la siguiente descripción:
 
-* **\<columna 1>**: de tipo \<tipo\>, representa....
-* **\<columna 2>**: de tipo \<tipo\>, representa....
+* **columna 1**: de tipo tipo, representa....
+* **columna 2**: de tipo tipo, representa....
 ....
 
 ## Tipos implementados
@@ -34,8 +34,8 @@ Descripción breve del tipo base.
 
 **Propiedades**:
 
-- _propiedad1_, de tipo \<Tipo1\>, consultable. 
-- _propiedad2_, de tipo \<Tipo2\>, consultable y modificable. 
+- _propiedad1_, de tipo Tipo1, consultable. 
+- _propiedad2_, de tipo Tipo2, consultable y modificable. 
 - ...
 - 
 **Constructores**: 
@@ -74,8 +74,8 @@ Descripción breve del tipo contenedor.
 
 **Propiedades**:
 
-- _propiedad1_, de tipo \<Tipo1\>, consultable. 
-- _propiedad2_, de tipo \<Tipo2\>, consultable y modificable. 
+- _propiedad1_, de tipo Tipo1, consultable. 
+- _propiedad2_, de tipo Tipo2, consultable y modificable. 
 - ...
 - 
 **Constructores**: 
