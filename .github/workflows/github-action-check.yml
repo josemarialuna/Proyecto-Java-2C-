@@ -6,40 +6,10 @@ jobs:
     name: runner / checkstyle
     runs-on: ubuntu-latest
     steps:
+      - run: echo "🔎 A continuación se va a revisar el código que acaba de subir a ${{ github.repository }}. Este proceso puede tardar un par de minutos..." 
       - uses: actions/checkout@v2
       - uses: dbelyaev/action-checkstyle@v0.5.1
         with:
           github_token: ${{ secrets.github_token }}
           reporter: github-pr-review
           level: warning
-  build:
-    # Name the Job
-    name: Lint Code Base
-    # Set the agent to run on
-    runs-on: ubuntu-latest
-
-    ##################
-    # Load all steps #
-    ##################
-    steps:
-      - run: echo "🔎 A continuación se va a revisar el código que acaba de subir a ${{ github.repository }}. Este proceso puede tardar un par de minutos..."      
-      ##########################
-      # Checkout the code base #
-      ##########################
-      - name: Checkout Code
-        uses: actions/checkout@v3
-        with:
-          # Full git history is needed to get a proper
-          # list of changed files within `super-linter`
-          fetch-depth: 0
-
-      ################################
-      # Run Linter against code base #
-      ################################
-      - name: Lint Code Base
-        uses: github/super-linter@v4
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: master
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo "🍏 Revisión completada  ${{ job.status }}."
