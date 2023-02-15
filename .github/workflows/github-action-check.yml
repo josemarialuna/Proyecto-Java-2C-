@@ -6,6 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "🔎 A continuación se va a revisar el código que acaba de subir a ${{ github.repository }}. Este proceso puede tardar un par de minutos..."
-      - name: Super-Linter
-        uses: github/super-linter@v4.10.1
-      - run: echo "🍏 Revisión completada ${{ job.status }}."
+      - name: Checkstyle for Java
+        uses: dbelyaev/action-checkstyle@v0.6.1
+
+      - run: echo "🍏 Revisión completada  ${{ job.status }}."
